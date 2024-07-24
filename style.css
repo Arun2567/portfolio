@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+  background-image: url("https://wallpaperswide.com/download/circuit_board_art-wallpaper-2048x1152.jpg");
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-bar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+}
+
+.side-bar {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-image: url("/output images/IMG_8453 - Copy - Copy - Copy.JPG");
+    position: absolute;
+    background-size: cover;
+    left: 10px;
+    top: 10px;
+}
+
+/* top bar text navigation design */
+h3 {
+    margin: 20px 40px;
+    color: white;
+    position: relative;
+    top: -25px;
+    transition: font-size 0.3s ease;
+}
+
+h3:hover {
+    font-size: 24px;
+}
+
+#about {
+    animation-name: h3ani;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+#Project {
+    animation-name: h3ani;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#events {
+    animation-name: h3ani;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+#Contact {
+    animation-name: h3ani;
+    animation-duration: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes h3ani {
+    0% {
+        top: -25px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/* toggle page */
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* common shape class */
+.shape {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-img{
+    height: 200px;
+    width: 200px;
+    background-image: url("/output images/IMG_8453 - Copy - Copy - Copy.JPG");
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.shape.visible {
+    display: flex;
+    opacity: 1;
+}
+
+/* about page */
+.about-details{
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-details ul {
+    list-style-type: none;
+    color: white;
+}
+
+.about-details li {
+    font-size: 24px;
+    margin: 20px;
+}
+
+/* project page */
+.Project-details {
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.prev, .next {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.prev {
+    background-image: url("/output images/left-arrow.png");
+    background-size: cover;
+}
+
+.next {
+    background-image: url("/output images/right-arrow.png");
+    background-size: cover;
+}
+
+.doxwipe-admin {
+    width: 1100px;
+    height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.doxwipe-images-admin {
+    height: 600px;
+    width: 300px;
+    background-image: url("/output images/doxwipe-splash.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.doxwipe-admin-details {
+    height: 400px;
+    width: 600px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#title {
+    font-size: 24px;
+    margin: 10px 0 30px 10px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+#framework, #app-details, #extra {
+    font-size: 20px;
+    margin: 10px 0 30px 10px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* event page */
+
+.events-details{
+    width: 1200px;
+    height: 700px;
+
+     color: white;
+}
+
+
+#event-list{
+    font-size: 20px;
+    margin: 10px 0 30px 30px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* contact page */
+
+.contact-details{
+    width: 1200px;
+    height: 700px;
+    color: white;  
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

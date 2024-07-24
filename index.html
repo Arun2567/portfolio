@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="side-bar"></div>
+        <h3 class="side-bar-component" id="about" onclick="toggle('about-tochange')">About</h3>
+        <h3 class="side-bar-component" id="Project" onclick="toggle('project-tochange')">Project</h3>
+        <h3 class="side-bar-component" id="events" onclick="toggle('events-tochange')">Events</h3>
+        <h3 class="side-bar-component" id="Contact" onclick="toggle('contact-tochange')">Contact</h3>
+    </div>
+
+    <div class="about-details shape" id="about-tochange">
+        <div class="profile-img">
+        
+        </div>
+       <ul>
+        <li>Hello, I am Arunprasad S,</li>
+        <li>currently final year in Information Technology,</li>
+        <li>PSNA College of Engineering and Technology ,Dindigul,TamilNadu.</li>
+        <li>Concentrating in <b>Full Stack Development</b>,</li>
+        <li>I developed several applications and website.</li>
+       </ul>
+    </div>
+    
+    <div class="Project-details shape" id="project-tochange">
+        <div class="prev" onclick="change('prev')"></div>
+        <div class="doxwipe-admin">
+            <div class="doxwipe-images-admin"></div>
+            <div class="doxwipe-admin-details">
+                <ul>
+                    <li id="title">Application name: <b>Doxwipe</b> (admin)</li>
+                    <li id="framework">Developed using Flutter</li>
+                    <li id="app-details">Application to remove requested image in social media and gallery <br> by admin which is given by user.</li>
+                    <li id="extra">Filed and successfully got <b>Copy Rights</b> for both user and admin.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="next" onclick="change('next')"></div>
+    </div>
+     
+    <div class="shape events-details" id="events-tochange">
+
+         <ul>
+            <li id="title"><b>hackathon and certificates</b></li>
+            <li id="event-list">Got Copy Rights for Doxwipe Project</li>
+            <li id="event-list">participated in <b>Smart India hackathon</b> and selected as finalist</li>
+            <li id="event-list">participated in SETHU YANDRA 2k23</li>
+            <li id="event-list">participated in INNOFEATA'23</li>
+            <li id="title"><b>Intership</b></li>
+            <li id="event-list">Android Application Development in NSIC</li>
+        </ul>
+       
+    </div>
+
+    <div class="shape contact-details" id="contact-tochange">
+        <ul>
+            <li id="event-list">Email: arunprasads666@gmail.com</li>
+            <li id="event-list">Phone: +91 6374824898</li>
+            <li id="event-list">LinkedIn: <a href="https://www.linkedin.com/in/arunprasad-s-877066250?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Arunprasad S</a></li>
+            <li id="event-list">Address: Dindigul, TamilNadu, India</li>
+        </ul>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
